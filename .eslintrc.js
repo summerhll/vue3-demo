@@ -13,7 +13,10 @@ module.exports = { // eslint-disable-line
   },
   rules: {
     quotes: [1, "double"],
-    'no-console': process.env.NODE_ENV === 'production' ? 'warn' : 'off',
-    'no-debugger': process.env.NODE_ENV === 'production' ? 'warn' : 'off'
+    semi: ["error", "always", { "omitLastInOneLineBlock": true }],
+    "space-before-function-paren": ["error", "never"],
+    "comma-dangle": ["error", "only-multiline"],
+    "no-console": process.env.NODE_ENV === "production" ? "warn" : "off",
+    "no-debugger": process.env.NODE_ENV === "production" ? "warn" : "off"
   }
 }
