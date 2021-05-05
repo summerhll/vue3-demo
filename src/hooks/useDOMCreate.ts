@@ -6,7 +6,7 @@ function useDOMCreate(nodeId: string) {
   document.body.appendChild(node);
   onUnmounted(() => {
     document.body.removeChild(node);
-  })
+  });
 }
 
 export default useDOMCreate;

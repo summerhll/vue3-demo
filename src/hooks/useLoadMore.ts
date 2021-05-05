@@ -19,7 +19,7 @@ const useLoadMore = (actionName: string, total: ComputedRef<number>,
     });
   };
   const isLastPage = computed(() => {
-    return Math.ceil(total.value / params.pageSize) < currentPage.value
+    return Math.ceil(total.value / params.pageSize) < currentPage.value;
   });
   return {
     loadMorePage,

@@ -18,6 +18,6 @@ const useClickOutside = (elementRef: Ref<null | HTMLElement>) => {
     document.removeEventListener("click", handler);
   });
   return isClickOutside;
-}
+};
 
 export default useClickOutside;
