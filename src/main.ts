@@ -8,6 +8,7 @@ axios.defaults.baseURL = "http://localhost:7001/api/";
 axios.interceptors.request.use(config => {
   store.commit("setLoading", true);
   store.commit("setError", { status: false, message: "" });
+  config.headers.icode = 'helloqianduanxunlianying';
   return config;
 });
 
